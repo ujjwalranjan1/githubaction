@@ -44,8 +44,8 @@ jobs:
         run: docker run -t -d --name=testcontainer ayushgoel1/test1 
       - 
         name: execute
-        run:
-          docker exec -t testcontainer gcc a.c 
-          ./a.out
+        run: |
+          - docker exec -t testcontainer gcc a.c 
+          - ./a.out
               
       
