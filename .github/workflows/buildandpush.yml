@@ -23,5 +23,5 @@ jobs:
         run: docker run -t -d --name=testcontainer ayushgoel1/test1 
       - 
         name: execute
-        run: docker exec -it testcontainer c++ a.cpp
+        run: docker exec -t testcontainer c++ a.cpp
       
