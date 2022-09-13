@@ -6,7 +6,7 @@ on:
       - 'main'
 
 jobs:
-  docker:
+  dockerbuildandpush: 
     runs-on: ubuntu-latest
     steps:
       -
@@ -27,6 +27,7 @@ jobs:
           tags: ayushgoel1/test1
           
   dockerpullanddeploy:
+    needs: dockerbuildandpush
     runs-on: ubuntu-latest
     steps:
       -
