@@ -10,17 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
-        name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-      -
         name: Login to DockerHub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          username: ayushgoel1
+          password: dckr_pat_C_S-xNXGZH6KQbGzD54_zd7GVE4
       -
         name: pull
-        run: docker pull ${{ secrets.DOCKERHUB_USERNAME }}/test1
+        run: docker pull ayushgoel1/test1
       -
         name: deploy
-        run: docker exec -it ${{ secrets.DOCKERHUB_USERNAME }}/test1 a.cpp
+        run: docker exec -it ayushgoel1/test1 a.cpp
