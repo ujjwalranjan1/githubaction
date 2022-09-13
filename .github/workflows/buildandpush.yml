@@ -6,6 +6,26 @@ on:
       - 'main'
 
 jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      -
+        name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ayushgoel1
+          password: dckr_pat_C_S-xNXGZH6KQbGzD54_zd7GVE4
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          file: ./Dockerfile
+          push: true
+          tags: ayushgoel1/test1
+          
   dockerpullanddeploy:
     runs-on: ubuntu-latest
     steps:
@@ -23,5 +43,5 @@ jobs:
         run: docker run -t -d --name=testcontainer ayushgoel1/test1 
       - 
         name: execute
-        run: docker exec -t testcontainer c++ a.cpp
+        run: docker exec -t testcontainer gcc a.cpp
       
