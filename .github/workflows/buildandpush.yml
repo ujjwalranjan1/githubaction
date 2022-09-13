@@ -20,7 +20,7 @@ jobs:
         run: docker pull ayushgoel1/test1
       -
         name: createcontainer
-        run: docker run -t testcontainer -d ayushgoel1/test1 
+        run: docker run -t -d --name=testcontainer ayushgoel1/test1 
       - 
         name: execute
         run: docker exec -it testcontainer c++ a.cpp
