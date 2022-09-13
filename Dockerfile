@@ -1,3 +1,3 @@
-FROM continuumio/anaconda
+FROM gcc
 WORKDIR /src
 COPY . /src
