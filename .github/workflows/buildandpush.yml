@@ -40,8 +40,9 @@ jobs:
         name: pull
         run: docker pull ayushgoel1/first-attempt
       -
+        uses: actions/checkout@v3
+      -
         name: createcontainer
-        run: docker-compose up
-          file = ./docker-compose.yml
-        
-      
+        uses: isbang/compose-action@v1.2.0
+        with:
+          compose-file: "./docker-compose.yml"
