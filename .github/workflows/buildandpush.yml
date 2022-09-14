@@ -38,7 +38,7 @@ jobs:
           password: dckr_pat_k1XQSAv_mGReob-Drh2F9qF-ytg
       -
         name: pull
-        run: docker pull ayushgoel1/test1
+        run: docker pull ayushgoel1/first-attempt
       -
         name: createcontainer
         run: docker-compose up
