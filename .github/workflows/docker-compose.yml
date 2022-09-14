@@ -1,4 +1,4 @@
 services:   
   routinetest:    
-    image : ayushgoel1/first-attempt     
+    image : first-attempt     
 
