@@ -24,7 +24,7 @@ jobs:
         with:
           file: ./Dockerfile
           push: true
-          tags: first-attempt
+          tags: ayushgoel1/first-attempt
           
   dockerpullanddeploy:
     needs: dockerbuildandpush
