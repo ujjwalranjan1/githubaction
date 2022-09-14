@@ -1,6 +1,9 @@
 services:
   routinetest:
-  container_name : first_attempt
-  image : first_attempt
-  build : .
+    container_name : first_attempt
+    image : first_attempt
+    build : 
+      context: .
+    environment: 
+      date: ${date}
       
