@@ -17,7 +17,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: ayushgoel1
-          password: dckr_pat_C_S-xNXGZH6KQbGzD54_zd7GVE4
+          password: dckr_pat_k1XQSAv_mGReob-Drh2F9qF-ytg
       -
         name: Build and push
         uses: docker/build-push-action@v3
@@ -35,7 +35,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: ayushgoel1
-          password: dckr_pat_C_S-xNXGZH6KQbGzD54_zd7GVE4
+          password: dckr_pat_k1XQSAv_mGReob-Drh2F9qF-ytg
       -
         name: pull
         run: docker pull ayushgoel1/test1
