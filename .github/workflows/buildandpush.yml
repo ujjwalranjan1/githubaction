@@ -42,6 +42,6 @@ jobs:
       -
         name: createcontainer
         run: docker-compose up
-#         with: 
-#           compose-file = ./docker-compose.yml
+          file = ./docker-compose.yml
+        
       
