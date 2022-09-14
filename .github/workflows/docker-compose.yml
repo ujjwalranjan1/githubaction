@@ -1,5 +1,4 @@
 services:   
-  routinetest:     
-    container_name : ayushgoel1/first-attempt     
+  routinetest:    
     image : ayushgoel1/first-attempt     
 
