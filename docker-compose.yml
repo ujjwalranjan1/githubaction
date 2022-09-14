@@ -1,4 +1,6 @@
 services:
   routinetest:
     image : first-attempt
+    build: 
+      context: .
       
