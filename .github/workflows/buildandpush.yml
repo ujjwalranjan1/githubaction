@@ -46,3 +46,5 @@ jobs:
         uses: isbang/compose-action@v1.2.0
         with:
           compose-file: "./docker-compose.yml"
+          services: 
+            ayushgoel1/first-attempt
